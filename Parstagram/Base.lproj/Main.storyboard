@@ -102,34 +102,40 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="379"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stranger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-hv-tcq">
-                                                    <rect key="frame" x="8" y="350" width="66" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stranger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-hv-tcq">
+                                                    <rect key="frame" x="8" y="350.5" width="73" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="73" id="nPY-bY-X6l"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hRx-Wq-iqc">
-                                                    <rect key="frame" x="8" y="8" width="359" height="334"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hRx-Wq-iqc">
+                                                    <rect key="frame" x="8" y="8" width="359" height="334.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="hRx-Wq-iqc" secondAttribute="height" multiplier="359:334" id="SJf-f5-Uf7"/>
+                                                        <constraint firstAttribute="width" secondItem="hRx-Wq-iqc" secondAttribute="height" multiplier="359:334" id="adu-gL-1wp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoW-kF-8mp">
-                                                    <rect key="frame" x="89" y="350" width="88" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoW-kF-8mp">
+                                                    <rect key="frame" x="89" y="350.5" width="278" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="hRx-Wq-iqc" secondAttribute="trailing" constant="8" id="1eB-AZ-Qss"/>
                                                 <constraint firstAttribute="trailing" secondItem="AoW-kF-8mp" secondAttribute="trailing" constant="8" id="2O7-69-IqY"/>
-                                                <constraint firstAttribute="bottom" secondItem="AoW-kF-8mp" secondAttribute="bottom" constant="8" id="9X1-9K-0eZ"/>
-                                                <constraint firstItem="hRx-Wq-iqc" firstAttribute="top" secondItem="iyL-To-56B" secondAttribute="top" constant="8" id="M4X-50-6az"/>
-                                                <constraint firstAttribute="bottom" secondItem="gVG-hv-tcq" secondAttribute="bottom" constant="8" id="PTS-4s-IWi"/>
-                                                <constraint firstItem="AoW-kF-8mp" firstAttribute="top" secondItem="hRx-Wq-iqc" secondAttribute="bottom" constant="8" id="VwS-Oe-Gn1"/>
-                                                <constraint firstItem="gVG-hv-tcq" firstAttribute="top" secondItem="hRx-Wq-iqc" secondAttribute="bottom" constant="8" id="tZI-9R-Jjf"/>
-                                                <constraint firstItem="hRx-Wq-iqc" firstAttribute="leading" secondItem="iyL-To-56B" secondAttribute="leading" constant="8" id="ui0-Zz-JmA"/>
+                                                <constraint firstItem="gVG-hv-tcq" firstAttribute="top" secondItem="hRx-Wq-iqc" secondAttribute="bottom" constant="8" id="5au-Db-c0J"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AoW-kF-8mp" secondAttribute="bottom" constant="8" id="9X1-9K-0eZ"/>
+                                                <constraint firstItem="hRx-Wq-iqc" firstAttribute="leading" secondItem="iyL-To-56B" secondAttribute="leading" constant="8" id="MiR-vb-L9U"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gVG-hv-tcq" secondAttribute="bottom" constant="8" id="PTS-4s-IWi"/>
+                                                <constraint firstItem="gVG-hv-tcq" firstAttribute="baseline" secondItem="AoW-kF-8mp" secondAttribute="firstBaseline" id="VLP-Rq-T7F"/>
+                                                <constraint firstItem="gVG-hv-tcq" firstAttribute="centerY" secondItem="AoW-kF-8mp" secondAttribute="centerY" id="WaO-DS-HSG"/>
+                                                <constraint firstItem="hRx-Wq-iqc" firstAttribute="top" secondItem="iyL-To-56B" secondAttribute="top" constant="8" id="XqC-3C-CEV"/>
+                                                <constraint firstAttribute="trailing" secondItem="hRx-Wq-iqc" secondAttribute="trailing" constant="8" id="eJG-dX-EVc"/>
+                                                <constraint firstItem="gVG-hv-tcq" firstAttribute="top" secondItem="hRx-Wq-iqc" secondAttribute="bottom" constant="8" id="fZ4-1f-IQX"/>
+                                                <constraint firstAttribute="bottom" secondItem="AoW-kF-8mp" secondAttribute="bottom" constant="8" id="u3J-sw-z6V"/>
                                                 <constraint firstItem="gVG-hv-tcq" firstAttribute="leading" secondItem="iyL-To-56B" secondAttribute="leading" constant="8" id="wHX-D1-NxU"/>
                                                 <constraint firstItem="AoW-kF-8mp" firstAttribute="leading" secondItem="gVG-hv-tcq" secondAttribute="trailing" constant="8" id="xa2-mv-KEp"/>
                                             </constraints>
